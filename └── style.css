@@ -1,0 +1,251 @@
+
+/* =================================
+   VENO BITES - ALGEMENE OPMAAK
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: #5c3427;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATIE */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #a46b50;
+}
+
+/* HOOFDINHOUD */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #75452e;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* KNOPPEN EN LINKS */
+
+main a {
+    display: inline-block;
+    background-color: #9b603f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+main a:hover {
+    background-color: #75452e;
+}
+
+/* LIJSTEN */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* TARIEVENTABEL */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    background-color: #75452e;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8eee6;
+}
+
+/* CONTACTFORMULIER */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #9b603f;
+    outline-offset: 2px;
+}
+
+button {
+    background-color: #9b603f;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #75452e;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #5c3427;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* =================================
+   MOBIELE WEERGAVE
+================================= */
+
+@media (max-width: 767px) {
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* =================================
+   COMPUTERVERSIE
+================================= */
+
+@media (min-width: 768px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    header {
+        padding: 35px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    main {
+        margin: 50px auto;
+    }
+
+    section {
+        padding: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
