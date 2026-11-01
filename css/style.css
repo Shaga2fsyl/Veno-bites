@@ -249,3 +249,35 @@ footer p {
         font-size: 30px;
     }
 }
+
+/* PRODUCTFOTO'S */
+.productfoto {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.foto-blok {
+    margin: 20px 0 0;
+}
+.foto-blok figcaption {
+    color: #75452e;
+    font-size: 0.95rem;
+    margin-top: 8px;
+    text-align: center;
+}
+.foto-home, .foto-over-ons {
+    max-width: 520px;
+    margin: 22px auto;
+}
+.fotogalerij {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+@media (min-width: 768px) {
+    .fotogalerij {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
